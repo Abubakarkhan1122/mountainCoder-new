@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} {% endblock title %}
+{% block body%}
+<h1 class="my-3">Welcome to Blog Home</h1>
+    {% for blog in blogs %}
+        <div class="container">
+        <div class="row mb-3">
+  <div class="media-body">
+    <h5 class="mt-0"> <a href="/blogpost/{{ blog.slug }}" class="text-dark">{{ blog.title }}</a></h5>
+      {{ blog.content | slice:80 }}....
+
+  </div>
+            <button class="btn btn-primary"> Read More</button>
+</div>
+        </div>
+    {% endfor %}
+{% endblock body %}

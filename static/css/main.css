@@ -1,0 +1,12 @@
+.main_banner{
+        position: relative;
+    } .contact_form{
+        position: absolute;
+        top: 10%;
+        left: 17%;
+        background-color: rgba(241, 231, 231, 0.25);
+        border-radius: 22px;
+    }
+      h1{
+          color: aqua;
+      }

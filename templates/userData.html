@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block body%}
+<h2 class="text-center px-3 py-3">Here the list of Contact Users </h2>
+<div class=" container-fluid">
+    {% for contact in users %}
+        <table class="table table-striped table-responsive">
+  <thead class="">
+    <tr >
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+        <th scope="col">Desc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{contact.name }}</td>
+      <td>{{contact.email }}</td>
+      <td>@{{contact.phone }}</td>
+      <td>@{{contact.desc }}</td>
+  </tbody>
+</table>
+
+    {% endfor %}
+</div>
+
+{% endblock body %}

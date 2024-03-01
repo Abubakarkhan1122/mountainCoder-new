@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} {% endblock title %}
+{% block body%}
+<h1 class="my-3">{{ blogs.title }}</h1>
+    <div class="container">
+    {{ blogs.content  }}
+    </div>
+    <a href="/bloghome/" class="btn btn-info">Back</a>
+{% endblock body %}
